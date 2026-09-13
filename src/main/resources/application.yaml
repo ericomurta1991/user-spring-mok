@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: api-rest
+  datasource:
+    url: jdbc:h2:mem:testdb
+    tomcat:
+      driver-class-name: org.h2.Driver
+      username: sa
+      password:
+  h2:
+    console:
+      enabled: true
