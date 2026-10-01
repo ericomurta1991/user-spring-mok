@@ -39,7 +39,7 @@ Este é um projeto de caráter acadêmico e experimental, criado com o propósit
 
 ## ⚠️ Aviso
 
-Este projeto não possui finalidade comercial e foi desenvolvido exclusivamente para fins de aprendizado, experimentação e aprimoramento técnico.
+Este projeto não possui finalidade comercial e foi desenvolvido exclusivamente para fins de aprendizado, experimentação e aprimoramento técnico .
 
 ---
 
