@@ -21,3 +21,19 @@ jobs:
 
       - name: Executar Build e Testes
         run: mvn clean test
+
+      - name: Discord Sucesso
+        if: success()
+        run: |
+          curl -H "Content-Type: application/json" \
+            -X POST \
+            -d '{"content":"✅ Build da PR passou com sucesso"}' \
+            "${{ secrets.DISCORD_WEBHOOK }}"
+
+      - name: Discord Falha
+        if: failure()
+        run: |
+          curl -H "Content-Type: application/json" \
+            -X POST \
+            -d '{"content":"❌ Build da PR falhou"}' \
+            "${{ secrets.DISCORD_WEBHOOK }}"
